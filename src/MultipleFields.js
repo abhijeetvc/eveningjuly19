@@ -19,6 +19,7 @@ function MultipleFields(){
     const handleChange=(event)=>{
         setUser({...user,[event.target.name]:event.target.value})
     }
+    
     // const[firstName,setFirstName]=React.useState('')
     // const[lastName,setLastName]=React.useState('')
     // const[city,setCity]=React.useState('')

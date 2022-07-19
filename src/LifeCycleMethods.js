@@ -29,7 +29,6 @@ class LifeCycleMethods extends React.Component{
     }
 
     render(){
-
         const component=this.state.number?
              <ComponentOne/>:<ComponentTwo/>
 
