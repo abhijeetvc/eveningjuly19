@@ -4,7 +4,7 @@
      // Props are immutable
 
 function PropsDemo(){
-
+    
     const message="Hellooooo"
 
     const person={
@@ -12,10 +12,25 @@ function PropsDemo(){
         city:"pune"
     }
 
+    const userList=[
+        {
+            id:1,
+            name:"A"
+        },{
+            id:2,
+            name:"B"
+        },{
+            id:3,
+            name:"C"
+        }
+    ]
+
     return(
         <div>
             <h1>Props Demo!!!</h1>
-            <ChildComponent message={message} person={person}/>
+            <ChildComponent message={message} 
+                 person={person}/>
+            <DisplayList userList={userList}/>     
         </div>
     )
 }     
@@ -28,6 +43,20 @@ function ChildComponent({message,person}){
             <p>Message : {message}</p>
             <p>Name : {person.name}</p>
             <p>City : {person.city}</p>
+        </div>
+    )
+}
+
+function DisplayList(props){
+    return(
+        <div>
+            <ul>
+                {
+                    props.userList.map((user)=>(
+                        <li>{user.id+" | "+user.name}</li>
+                    ))
+                }
+            </ul>
         </div>
     )
 }
