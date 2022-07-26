@@ -1,4 +1,6 @@
 import React from 'react'
+import CompOne from './CompOne';
+import CompTwo from './CompTwo';
 
 class LifeCycleMethod extends React.Component{
 
@@ -20,12 +22,15 @@ class LifeCycleMethod extends React.Component{
     }
 
     render(){
+        const component=this.state.number ? 
+                       <CompOne/>:<CompTwo/>
         return(
             <div>
                 <h1>Life Cycle Methods!!!</h1>
                 <p>Number is: {this.state.number}</p>
                 <button type='button' 
                      onClick={this.add}>Add</button>
+                {component}  
             </div>
         )
     }
