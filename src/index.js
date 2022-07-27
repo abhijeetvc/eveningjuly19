@@ -10,12 +10,13 @@ import RadioInput from './RadioInput';
 import StateDemo from './StateDemo';
 import PropsDemo from './PropsDemo'
 import LifeCycleMethod from './LifeCycleMethod';
+import UseEffectDemo from './UseEffectDemo';
 //import Test from './Test';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-     <LifeCycleMethod/>
+     <UseEffectDemo/>
   </div>
 );
 
