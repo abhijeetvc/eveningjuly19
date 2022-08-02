@@ -7,7 +7,6 @@ function CallBackEvent(){
     const handleChange=(value)=>{
         setText(value)
     }
-
     return(
         <>
             <h1>CallBack Event</h1>

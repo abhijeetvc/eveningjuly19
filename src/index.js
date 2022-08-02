@@ -12,12 +12,14 @@ import PropsDemo from './PropsDemo'
 import LifeCycleMethod from './LifeCycleMethod';
 import UseEffectDemo from './UseEffectDemo';
 import CallBackEvent from './CallBackEvent';
+import ApiCall from './ApiCall';
+import CheckList from './CheckList';
 //import Test from './Test';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-     <CallBackEvent/>
+     <CheckList/>
   </div>
 );
 
