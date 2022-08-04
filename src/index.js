@@ -14,12 +14,13 @@ import UseEffectDemo from './UseEffectDemo';
 import CallBackEvent from './CallBackEvent';
 import ApiCall from './ApiCall';
 import CheckList from './CheckList';
+import App from './App';
 //import Test from './Test';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-     <CheckList/>
+     <App/>
   </div>
 );
 

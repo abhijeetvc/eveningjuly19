@@ -1,7 +1,6 @@
 import React from 'react'
 
 function CheckList(){
-
     const data=[{
         id:1,
         name:'A'
@@ -37,6 +36,9 @@ function TableData({list,setList}){
 
     const remove=(index)=>{
         console.log(list[index]);
+        const temp=[...list]
+        temp.splice(index,1)
+        setList(temp)
     }
 
     return(
