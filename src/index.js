@@ -16,12 +16,13 @@ import ApiCall from './ApiCall';
 import CheckList from './CheckList';
 import App from './App';
 import UseMemoDemo from './UseMemoDemo';
+import UseReducerDemo from './UseReducerDemo';
 //import Test from './Test';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-     <UseMemoDemo/>
+     <UseReducerDemo/>
   </div>
 );
 
