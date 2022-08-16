@@ -17,12 +17,14 @@ import CheckList from './CheckList';
 import App from './App';
 import UseMemoDemo from './UseMemoDemo';
 import UseReducerDemo from './UseReducerDemo';
+import TestArt from './TestArt';
+import UseContextDemo from './UseContextDemo';
 //import Test from './Test';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-     <UseReducerDemo/>
+     <UseContextDemo/>
   </div>
 );
 
